@@ -1,0 +1,138 @@
+
+/*ovaj dio mi je za početnu stranicu, odnosno background slika i navigacijski buttoni*/
+
+
+/* ovo mi je za pozadinsku sliku, boju teksta i fonta na njoj */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("slike/slika_za_pozadinu.jpg");
+  color: rgba(255, 255, 255, 0.884);
+  font-weight: bold;
+}
+
+/* nisam siguran što je, pogledati video, u povijesti imam */
+a{
+  color: inherit;
+}
+
+/* ovo mi je za buttone navigacije da ih pokaze vodoravno i da centrira */
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* isto ko i ovo gore al se jos stilizira tekst -> sva velika slova i visina linije */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+nav ul ul {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+/* ovo mi se odnosi isto na navigacijske buttone po applikaciji */
+nav ul li { 
+  text-transform: uppercase;
+  line-height: 1.5; /*visina buttona */
+  border: 2px solid rgba(255, 255, 255, 0.671); /* boja ruba oko buttona debljina ruba */
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px; /*udaljenost između navigacijskih buttona*/
+}
+
+/* ovo mi je kad pređem mišem preko navigacijskih buttona da pobijeli pozadinska boja  */
+nav ul li:hover {
+ background-color: white; 
+}
+
+/* boja slova unutar navigacijskih elemenata te definiranje praznog prostora oko njih */
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px 10px;
+  color: white; /* ovo je za boju slova */
+}
+
+nav ul li a:hover {
+  color: rgba(0, 89, 255, 0.432); /*kad dodem misem na button, boja slova*/
+  font-weight: bold;
+}
+
+
+/* OVAJ DIO MI JE ZA TALICE KAD SE ULOGIRAM*/
+table {
+  margin-top: 150px; /* udaljenost tablice od vrha*/
+  display: flex;
+  justify-content: center; /*da je naa sredini*/
+}
+
+/*ovo mi je "glava tablice"*/
+th{
+  border: 3px solid rgba(245, 245, 245, 0.582); /*rub i boja ruba*/
+  padding: 10px; /*da proširim prostor glave tablice*/
+  border-radius: 5px; /*zaobljene coskova*/
+}
+
+/*isto ko i ovo gore samo za dio di se prikazuju podaci o doktorima*/
+td{
+  border: 3px solid rgba(103, 189, 238, 0.596);
+  padding: 10px;
+  border-radius: 2px;
+}
+
+/*ovi hoveri su isto za prijelaz miša preko prostora u tablici*/ 
+td:hover{ 
+  background-color: rgba(245, 245, 245, 0.397);
+  color: white;
+  text-transform: uppercase;
+}
+
+td a{
+  text-decoration: none;
+}
+
+/* ovo mi je za forme za unos nove recenzije i novog doktora, pomicanje svih elemenata na sredinu*/
+form {
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase; /*ovo mi je samo za naslov na home page Dobrodošli*/
+  margin-top: 148px;
+}
+
+.form{
+  margin-top: 25px; /*gore dolje sa elementima*/
+}
+
+.form label{
+  margin-right: 10px; /*razmaci između el*/
+}
+
+ /* posljednji element unutar je odmaknut 20px od lijeve strane u mom slučaju button, nije kao na youtubeu */
+.form input:last-child{
+  margin-left: 50px;
+}
+
+/* boreder radius služi za zaobljavanje rubova  */
+.form input:not(last-child){
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white !important;
+}
+
+
+.prijava-title{
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
